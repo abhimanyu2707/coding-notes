@@ -123,7 +123,7 @@ class raa_object_class {
   void operator()(params) {}
 }
 
-std::thread raa_thread(raa_class_object(), params);
+std::thread raa_thread(raa_object_class(), params);
 ```
 
 > Don't create threads on the heap with the new operator! Do it automatically on the stack for efficiency like in the examples stated above.
